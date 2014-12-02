@@ -1,0 +1,29 @@
+<html>
+
+	<head> 
+		<script src="simpler.js"></script>
+
+		<script type="text/javascript">
+
+			var home = simpler.createClass({
+				getInitialState: function(){
+					return {test: 'testing the replace now', test3: 'this is test 3'}
+				}
+
+			})
+			window.onload = function(){
+				simpler.init(home,document.body)
+			}
+		</script>
+	</head>
+
+	<body>
+	<input type="text" data-bind="test" />
+	{{test}}
+	<br />
+		<input type="text" data-bind="test3" />
+
+	{{test3}}
+	</body>
+
+</html>
