@@ -7,7 +7,11 @@
 
 			var home = simpler.createClass({
 				getInitialState: function(){
-					return {test: 'testing the replace now', test3: 'this is test 3'}
+					return {
+						test: 'testing the replace now', 
+						test3: 'this is test 3',
+						zachk: 'the fuck you think this is'
+					}
 				}
 
 			})
@@ -15,15 +19,31 @@
 				simpler.init(home,document.body)
 			}
 		</script>
+		<style type=text/css>
+			.v-spacing {
+				margin: 20px 0;
+			}
+		</style>
 	</head>
 
 	<body>
+
 	<input type="text" data-bind="test" />
 	{{test}}
+
 	<br />
-		<input type="text" data-bind="test3" />
+
+		<input class="v-spacing" type="text" data-bind="test3" />
 
 	{{test3}}
+
+	<br />
+
+	<input type="text" data-bind="zachk" />
+	
+	{{zachk}}
+	
+
 	</body>
 
 </html>
